@@ -1,87 +1,90 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.container{
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(224, 224, 224);
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  margin: 5% 20%;
+
+  .heading {
+    margin: 20px;
+    background-color: white;
+    padding: 10px;
+  }
+
+  #input-tasks {
+    padding: 5%;
+    border: none;
+    border-radius: 10px;
+  }
+
+  #input-tasks:focus {
+    outline: 5px solid rgba(62, 168, 255, 0.555);
+  }
+
+  .input-group {
+    width: 30%;
     display: flex;
-    flex-direction: column;
-    background-color: rgb(224, 224, 224);
-    border-radius: 30px; 
-    justify-content: center;    
-    align-items: center;
-    font-family: sans-serif;
-    margin: 5% 20%;    
+    justify-content: space-around;
+    margin: 0 0 5% 0;
+  }
 
-    .heading{
-        margin: 20px;
-        background-color: white;
-        padding: 10px;
-    }
+  .add-task {
+    background-color: rgb(40, 115, 255);
+    padding: 3%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+  }
 
-    #input-tasks{
-        padding: 5%;
-        border: none;
-        border-radius: 10px;    
-    }
+  .add-task:hover {
+    background-color: rgb(27, 76, 168);
+    outline: rgba(62, 168, 255, 0.555);
+  }
 
-    #input-tasks:focus{
-        outline: 5px solid rgba(62, 168, 255, 0.555);
-    }
+  .add-task:active {
+    background-color: rgb(20, 57, 126);
+  }
 
-    .input-group{
-        width: 30%;
-        display: flex;
-        justify-content: space-around;
-        margin: 0 0 5% 0;
-    }
+  #task-view-tasks {
+    cursor: pointer;
+  }
 
-        
+  .checked {
+    text-decoration: line-through;
+    color: rgb(155, 151, 151);
+  }
 
-    
-
-    .add-task{
-        background-color: rgb(40, 115, 255);
-        padding: 3%;
-        border: none;
-        border-radius: 10px;
-        color: white;
-       
-        
-    }
-
-    #task-view-tasks{
-        cursor:pointer;
-    }
-    
-    .checked{
-        text-decoration: line-through;
-        color: rgb(155, 151, 151);
-    }
-
-    .task-item{
-        padding: 10px;
-        margin: 5px 0;
-        background: rgb(255, 255, 255);
-        border-radius: 10px;
-    }
+  .task-item {
+    padding: 10px;
+    margin: 5px 0;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+  }
 }
 // For mobiles
-@media only screen and (max-width: 600px){
-    .container{
-        margin: 5% 5%;
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 5% 5%;
 
-        .add-task{
-            padding: 0 20px;
-            margin-right: 5px;  
-        }
-
-        .input-group{
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            margin: 0 0 5% 0;
-        }
+    .add-task {
+      padding: 0 20px;
+      margin-right: 5px;
     }
+
+    .input-group {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 0 5% 0;
+    }
+  }
 }

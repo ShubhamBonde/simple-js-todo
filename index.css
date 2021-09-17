@@ -59,6 +59,15 @@
   color: white;
 }
 
+.container .add-task:hover {
+  background-color: #1b4ca8;
+  outline: rgba(62, 168, 255, 0.555);
+}
+
+.container .add-task:active {
+  background-color: #14397e;
+}
+
 .container #task-view-tasks {
   cursor: pointer;
 }
