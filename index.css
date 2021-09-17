@@ -1,0 +1,9 @@
+#task-view-tasks {
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #9b9797;
+}
+/*# sourceMappingURL=index.css.map */
